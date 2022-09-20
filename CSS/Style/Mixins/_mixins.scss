@@ -1,0 +1,60 @@
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin MaxMediaQuery($size){
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+// Responsive Mixins
+@mixin grid-lg-2-md-1{
+    grid-template-columns: 1fr 1fr;
+    @include MaxMediaQuery(991px){
+        grid-template-columns: 1fr;
+    }
+}
+
+@mixin  grid-lg-3-md-2-sm-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    @include MaxMediaQuery(991px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @include MaxMediaQuery(767px){
+        grid-template-columns: 1fr;
+    }
+}
+
+@mixin  grid-lg-4-md-3-sm-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include MaxMediaQuery(991px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include MaxMediaQuery(767px){
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@mixin  grid-lg-4-md-2-sm-1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include MaxMediaQuery(991px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @include MaxMediaQuery(767px){
+        grid-template-columns: 1fr;
+    }
+}

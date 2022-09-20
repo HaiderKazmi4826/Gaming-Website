@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamics</title>
+    <!-- Font Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- ______________Swiper Js____________ -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- CSS Links -->
+    <!-- __________Main Style CSS_____________ -->
+    <link rel="stylesheet" href="./CSS/Style/style.css" />
+    <!-- _____________Ionic Icons CDN Link_______________ -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- ___________________Swiper JS_____________ -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File Link -->
+    <script defer src="./JS/main.js"></script>
+    <!-- ______________________________________________________ -->
+  </head>
+
+  <body>
+    <!-- ___Header Start___ -->
+    <header class="header">
+      <div class="header__top"></div>
+      <div class="header__bottom" id="header__bottom">
+        <div class="container header__bottom__container">
+          <a href="index.html" class="header__logo">gamics</a>
+
+          <nav class="header__navbar" id="header__navbar">
+            <ul class="navbar__nav">
+              <li class="nav__item">
+                <a href="#" class="nav__link">home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">live</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">featured</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">shop</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__btns">
+            <button class="header__cart__btn">
+              <ion-icon name="cart"></ion-icon>
+            </button>
+            <button
+              class="header__search__btn search__box__toggle__btn"
+              id="header__search__btn"
+            >
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <button
+              class="header__navbar__toggler"
+              id="header__navbar__toggler"
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ___Header End___ -->
+
+    <!-- ___Search Box Start___ -->
+    <div class="search__box" id="search__box">
+      <div class="search__box__inner">
+        <input
+          type="text"
+          placeholder="Search here..."
+          class="search__box__input__field"
+        />
+
+        <button class="search__box__btn search__box__toggle__btn" type="submit">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <button class="search__box__close__btn" id="search__box__close__btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <!-- ___Search Box End___ -->
+
+    <main>
+      <!-- ___Hero Start___ -->
+      <section class="section hero" id="home">
+        <div class="container hero__container grid grid_768_2">
+          <div class="hero__content text_767_center">
+            <p class="hero__subtitle">world gaming</p>
+            <h1 class="hero__title">create <span>manage</span> matches</h1>
+            <p class="hero__para">
+              Find technology and people for digital products in public sector
+              and Find an individual specialist develop researcher.
+            </p>
+            <button class="btn skew_bg hero__btn">read more</button>
+          </div>
+
+          <figure class="hero__img">
+            <img src="./Images/hero-banner.png" alt="" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+      <!-- ___Hero End___ -->
+    </main>
+
+    <!-- ___Brand Start___ -->
+    <section class="section brand">
+      <div class="container swiper">
+        <div class="swiper-wrapper">
+          <!-- Brand Item Start -->
+          <div class="swiper-slide brand__item">
+            <img src="./Images/brand-1.png" alt="" />
+          </div>
+          <!-- Brand Item End -->
+          <!-- Brand Item Start -->
+          <div class="swiper-slide brand__item">
+            <img src="./Images/brand-2.png" alt="" />
+          </div>
+          <!-- Brand Item End -->
+          <!-- Brand Item Start -->
+          <div class="swiper-slide brand__item">
+            <img src="./Images/brand-3.png" alt="" />
+          </div>
+          <!-- Brand Item End -->
+          <!-- Brand Item Start -->
+          <div class="swiper-slide brand__item">
+            <img src="./Images/brand-4.png" alt="" />
+          </div>
+          <!-- Brand Item End -->
+          <!-- Brand Item Start -->
+          <div class="swiper-slide brand__item">
+            <img src="./Images/brand-5.png" alt="" />
+          </div>
+          <!-- Brand Item End -->
+          <!-- Brand Item Start -->
+          <div class="swiper-slide brand__item">
+            <img src="./Images/brand-6.png" alt="" />
+          </div>
+          <!-- Brand Item End -->
+        </div>
+      </div>
+    </section>
+    <!-- ___Brand End___ -->
+
+    <div class="section__wrapper">
+      <!-- ___Latest Game Start___ -->
+      <section class="section latestGame">
+        <div class="container">
+          <p class="section_subtitle">latest release</p>
+          <h2 class="section_title has_after">create & <span>manage</span></h2>
+        </div>
+        <div class="container mySwiper latestGame__swiper">
+          <div class="swiper-wrapper latestGame__swiper__wrapper">
+            <!-- LatestGame Item Start -->
+            <div class="latestGame__item swiper-slide">
+              <figure class="latestGame__img">
+                <img src="./Images/latest-game-1.jpg" alt="" />
+              </figure>
+
+              <div class="latestGame__content">
+                <a href="" class="latestGame__badge skew_bg">zombie</a>
+                <h3>
+                  <a href="#" class="latestGame__title"
+                    >white walker <span>daily</span></a
+                  >
+                </h3>
+                <p class="latestGame__price">entry fee: <span>free</span></p>
+              </div>
+            </div>
+            <!-- LatestGame Item End -->
+            <!-- LatestGame Item Start -->
+            <div class="latestGame__item swiper-slide">
+              <figure class="latestGame__img">
+                <img src="./Images/latest-game-2.jpg" alt="" />
+              </figure>
+
+              <div class="latestGame__content">
+                <a href="" class="latestGame__badge skew_bg">zombie</a>
+                <h3>
+                  <a href="#" class="latestGame__title"
+                    >white walker <span>daily</span></a
+                  >
+                </h3>
+                <p class="latestGame__price">entry fee: <span>free</span></p>
+              </div>
+            </div>
+            <!-- LatestGame Item End -->
+            <!-- LatestGame Item Start -->
+            <div class="latestGame__item swiper-slide">
+              <figure class="latestGame__img">
+                <img src="./Images/latest-game-3.jpg" alt="" />
+              </figure>
+
+              <div class="latestGame__content">
+                <a href="" class="latestGame__badge skew_bg">zombie</a>
+                <h3>
+                  <a href="#" class="latestGame__title"
+                    >white walker <span>daily</span></a
+                  >
+                </h3>
+                <p class="latestGame__price">entry fee: <span>free</span></p>
+              </div>
+            </div>
+            <!-- LatestGame Item End -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- ___Latest Game End___ -->
+
+      <!-- ___Live Match Start___ -->
+      <section class="section liveMatch">
+        <div class="container">
+          <h2 class="section_title has_after">watch live match</h2>
+          <figure class="liveMatch__img grid">
+            <img src="./Images/live-match-banner.png" alt="" class="w_100">
+            <button class="liveMatch__img__play__btn">
+              <ion-icon name="play"></ion-icon>
+            </button>
+          </figure>
+
+          <div class="liveMatch__players grid grid_992_3">
+            <figure class="liveMatch__player liveMatch__player__1">
+              <img src="./Images/live-match-player-1.png" alt="">
+            </figure>
+
+            <div class="liveMatch__detail">
+              <p class="liveMatch__subtitle">upcoming live matches</p>
+              <time class="liveMatch__time" datatime="8:30">8:30</time>
+            </div>
+
+            <figure class="liveMatch__player liveMatch__player__2">
+              <img src="./Images/live-match-player-2.png" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- ___Live Match End___ -->
+    </div>
+
+    <!-- ___Released Games Start___ -->
+    <section class="section releasedGames">
+      <div class="container">
+        <h2 class="section_title has_after black">all released <span>games</span></h2>
+      </div>
+      <div class="container releasedGames__swiper">
+        <div class="swiper-wrapper">
+          <!-- Released Games Item Start -->
+          <div class="swiper-slide releasedGames__item">
+             <figure class="releasedGames__item__img">
+              <img src="./Images/featured-game-1.jpg" alt="" class="w_100">
+             </figure>
+             <div class="releasedGames__item__content">
+              <div class="releasedGames__item__content__overlay__icon">
+                <img src="./Images/featured-game-icon.png" alt="">
+              </div>
+              <h3 class="releasedGames__item__title">just for <span>gamers</span></h3>
+              <p class="releasedGames__item__subtitle">
+                <ion-icon name="notifications"></ion-icon>
+                playstation 5, xbox
+              </p>
+             </div>
+          </div>
+          <!-- Released Games Item End -->
+          <!-- Released Games Item Start -->
+          <div class="swiper-slide releasedGames__item">
+             <figure class="releasedGames__item__img">
+              <img src="./Images/featured-game-2.jpg" alt="" class="w_100">
+             </figure>
+             <div class="releasedGames__item__content">
+              <div class="releasedGames__item__content__overlay__icon">
+                <img src="./Images/featured-game-icon.png" alt="">
+              </div>
+              <h3 class="releasedGames__item__title">just for <span>gamers</span></h3>
+              <p class="releasedGames__item__subtitle">
+                <ion-icon name="notifications"></ion-icon>
+                playstation 5, xbox
+              </p>
+             </div>
+          </div>
+          <!-- Released Games Item End -->
+          <!-- Released Games Item Start -->
+          <div class="swiper-slide releasedGames__item">
+             <figure class="releasedGames__item__img">
+              <img src="./Images/featured-game-3.jpg" alt="" class="w_100">
+             </figure>
+             <div class="releasedGames__item__content">
+              <div class="releasedGames__item__content__overlay__icon">
+                <img src="./Images/featured-game-icon.png" alt="">
+              </div>
+              <h3 class="releasedGames__item__title">just for <span>gamers</span></h3>
+              <p class="releasedGames__item__subtitle">
+                <ion-icon name="notifications"></ion-icon>
+                playstation 5, xbox
+              </p>
+             </div>
+          </div>
+          <!-- Released Games Item End -->
+          <!-- Released Games Item Start -->
+          <div class="swiper-slide releasedGames__item">
+             <figure class="releasedGames__item__img">
+              <img src="./Images/featured-game-4.jpg" alt="" class="w_100">
+             </figure>
+             <div class="releasedGames__item__content">
+              <div class="releasedGames__item__content__overlay__icon">
+                <img src="./Images/featured-game-icon.png" alt="">
+              </div>
+              <h3 class="releasedGames__item__title">just for <span>gamers</span></h3>
+              <p class="releasedGames__item__subtitle">
+                <ion-icon name="notifications"></ion-icon>
+                playstation 5, xbox
+              </p>
+             </div>
+          </div>
+          <!-- Released Games Item End -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- ___Released Games End___ -->
+
+    <!-- ___Product Start___ -->
+    <section class="section product">
+      <div class="container">
+        <h2 class="section_title has_after product__section__title">gaming product <span>corner</span></h2>
+        <p class="section_top_para">Compete with 100 players on a remote islandfor winner take showdown known issue where certain skin strategic.</p>
+      </div>
+      <div class="container grid product__container grid_576_2 grid_992_3">
+        <!-- Product Item Start -->
+        <div class="product__item">
+          <figure class="product__item__img">
+            <img src="./Images/shop-img-1.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="product__item__content">
+            <div class="product__item__badge skew_bg">t-shirt</div>
+            <h3 class="product__item__title">woment black t-shirt</h3>
+            <div class="product__item__price">
+              <p>$29.00</p>
+              <ion-icon name="bag"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- Product Item End -->
+        <!-- Product Item Start -->
+        <div class="product__item">
+          <figure class="product__item__img">
+            <img src="./Images/shop-img-2.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="product__item__content">
+            <div class="product__item__badge skew_bg">t-shirt</div>
+            <h3 class="product__item__title">woment black t-shirt</h3>
+            <div class="product__item__price">
+              <p>$29.00</p>
+              <ion-icon name="bag"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- Product Item End -->
+        <!-- Product Item Start -->
+        <div class="product__item">
+          <figure class="product__item__img">
+            <img src="./Images/shop-img-3.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="product__item__content">
+            <div class="product__item__badge skew_bg">t-shirt</div>
+            <h3 class="product__item__title">woment black t-shirt</h3>
+            <div class="product__item__price">
+              <p>$29.00</p>
+              <ion-icon name="bag"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- Product Item End -->
+        <!-- Product Item Start -->
+        <div class="product__item">
+          <figure class="product__item__img">
+            <img src="./Images/shop-img-4.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="product__item__content">
+            <div class="product__item__badge skew_bg">t-shirt</div>
+            <h3 class="product__item__title">woment black t-shirt</h3>
+            <div class="product__item__price">
+              <p>$29.00</p>
+              <ion-icon name="bag"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- Product Item End -->
+      </div>
+    </section>
+    <!-- ___Product End___ -->
+
+    <!-- ___Blog Start___ -->
+    <section class="section blog">
+      <div class="container">
+        <h2 class="section_title has_after blog__section__title">latest news & <span>articles</span></h2>
+        <p class="section_top_para blog__seciton__top__para">Compete with 100 players on a remote islandfor winner take showdown known issue where certain skin strategic.</p>
+      </div>
+
+      <div class="container blog__container grid grid_576_2 grid_992_3">
+        <!-- Blog Item Start -->
+       <div class="blog__item">
+        <figure class="blog__item__img">
+          <img src="./Images/blog-1.jpg" alt="" loading="lazy">
+        </figure>
+        <div class="blog__content">
+          <div class="blog__content__top__info">
+            <p class="admin">
+              <ion-icon name="person"></ion-icon>
+              Admin
+            </p>
+            <p class="date">
+              <ion-icon name="calendar-number"></ion-icon>
+              September 19, 2022
+            </p>
+          </div>
+          <h3 class="blog__content__title">shooter action video</h3>
+          <p class="blog__content__para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur similique sit, officia tenetur in magnam!
+          </p>
+          <a href="#" class="blog__readmore__btn">
+            read more
+            <ion-icon name="send"></ion-icon>
+          </a>
+        </div>
+       </div>
+        <!-- Blog Item End -->
+        <!-- Blog Item Start -->
+       <div class="blog__item">
+        <figure class="blog__item__img">
+          <img src="./Images/blog-2.jpg" alt="" loading="lazy">
+        </figure>
+        <div class="blog__content">
+          <div class="blog__content__top__info">
+            <p class="admin">
+              <ion-icon name="person"></ion-icon>
+              Admin
+            </p>
+            <p class="date">
+              <ion-icon name="calendar-number"></ion-icon>
+              September 19, 2022
+            </p>
+          </div>
+          <h3 class="blog__content__title">shooter action video</h3>
+          <p class="blog__content__para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur similique sit, officia tenetur in magnam!
+          </p>
+          <a href="#" class="blog__readmore__btn">
+            read more
+            <ion-icon name="send"></ion-icon>
+          </a>
+        </div>
+       </div>
+        <!-- Blog Item End -->
+        <!-- Blog Item Start -->
+       <div class="blog__item">
+        <figure class="blog__item__img">
+          <img src="./Images/blog-3.jpg" alt="" loading="lazy">
+        </figure>
+        <div class="blog__content">
+          <div class="blog__content__top__info">
+            <p class="admin">
+              <ion-icon name="person"></ion-icon>
+              Admin
+            </p>
+            <p class="date">
+              <ion-icon name="calendar-number"></ion-icon>
+              September 19, 2022
+            </p>
+          </div>
+          <h3 class="blog__content__title">shooter action video</h3>
+          <p class="blog__content__para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur similique sit, officia tenetur in magnam!
+          </p>
+          <a href="#" class="blog__readmore__btn">
+            read more
+            <ion-icon name="send"></ion-icon>
+          </a>
+        </div>
+       </div>
+        <!-- Blog Item End -->
+      </div>
+    </section>
+    <!-- ___Blog End___ -->
+
+    <!-- ___NewsLetter Start___ -->
+    <section class="newsLetter">
+      <div class="container">
+        <div class="newsLetter__card">
+          <h2 class="newsLetter__title">our <span>newsletter</span></h2>
+          <form action="" class="newsLetter__form">
+            <div class="newsLetter__form__input__wrapper skew_bg">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required placeholder="Enter you email...">
+            </div>
+            <button type="submit" class="form__btn skew_bg">
+              subscribe
+              <ion-icon name="send"></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ___NewsLetter End___ -->
+
+    <!-- ___Footer Start___ -->
+    <footer class="footer">
+        <div class="container footer__top__container grid grid_576_2">
+          <!-- Footer Top Item Start -->
+          <div class="footer__top__item footer__brand">
+            <a href="index.html" class="footer__logo">gamics</a>
+            <p class="footer__brand__para">
+              Gamics market place Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <address class="footer__address">
+              <ion-icon name="location"></ion-icon>
+              Address: PO Box w75 Street Ian West new queens</address>
+            <p class="footer__phone__number">
+              <ion-icon name="headset"></ion-icon>
+               Phone: +24 5715 739 904
+            </p>
+            <p class="footer__email">
+              <ion-icon name="mail-open-outline"></ion-icon>
+               Email: hali4826@gmail.com
+            </p>
+          </div>
+          <!-- Footer Top Item End -->
+          <!-- Footer Top Item Start -->
+          <div class="footer__top__item footer__products">
+            <h4 class="footer__top__item__title">products</h4>
+            <ul class="footer__top__item__common__list">
+              <li>graphics (26)</li>
+              <li>backgrounds (11)</li>
+              <li>fonts (9)</li>
+              <li>music (9)</li>
+              <li>photography (12)</li>
+            </ul>
+          </div>
+          <!-- Footer Top Item End -->
+          <!-- Footer Top Item Start -->
+          <div class="footer__top__item footer__help">
+            <h4 class="footer__top__item__title">need help?</h4>
+            <ul class="footer__top__item__common__list">
+              <li>terms & conditions</li>
+              <li>privacy policy</li>
+              <li>refund policy</li>
+              <li>affiliate</li>
+              <li>use cases</li>
+            </ul>
+          </div>
+          <!-- Footer Top Item End -->
+          <!-- Footer Top Item Start -->
+          <div class="footer__top__item footer__social__links">
+            <h4 class="footer__top__item__title">follow us</h4>
+            <ul class="footer__social__list">
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+            <div class="footer__form">
+              <h4 class="footer__top__item__title">newsletter signup</h4>
+              <form action="">
+                <div class="footer__form__input__field">
+                  <input type="email" required placeholder="Enter you email">
+                  <button class="footer__form__btn">
+                    <ion-icon name="rocket"></ion-icon>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- Footer Top Item End -->
+        </div>
+    </footer>
+    <!-- ___Footer End___ -->
+
+  </body>
+</html>

@@ -1,0 +1,241 @@
+@mixin  MaxMediaQuery($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin MinMediaQuery($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+// ___________________________________________
+// ___________________________________________
+// ___________________________________________
+// ___________________________________________
+.container{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section{
+  padding: 120px 0;
+}
+.grid{
+    display: grid;
+    width: 100%;
+}
+.w_100{
+  width: 100%;
+}
+.btn{
+  margin: 0 auto;
+  color: $eerie-black-1;
+  font-size: $fs-8;
+  text-transform: uppercase;
+  padding: 0 35px;
+  min-height: 55px;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  &.skew_bg::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $marigold;
+    z-index: -1;
+    transform: skewX(-16deg);
+  }
+  &::after{
+    content: "";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 12px);
+    background-color: $marigold;
+    transform: skewX(-16deg);
+  }
+}
+.skew_bg{
+  position: relative;
+  max-width: max-content;
+  z-index: 1;
+}
+.skew_bg::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $marigold;
+  z-index: -1;
+  transform: skewX(-16deg);
+}
+.section_title, .section_subtitle{
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.section_subtitle{
+  color: $light-gray-2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.section_title{
+  margin-bottom: 45px;
+  &.black{
+    color: $raisin-black-1;
+  }
+  &.has_after{
+    padding-bottom: 35px;
+  }
+}
+.section_top_para{
+  text-align: center;
+  margin: 20px auto 90px;
+  color: $light-gray-2;
+}
+.section_title.has_after::after{
+  content: url("/Images/title-underline.png");
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+// _____________________
+// _____________________
+// _____________________
+.grid_1{
+    grid-template-columns: 1fr;
+}
+.grid_2{
+    grid-template-columns: 1fr 1fr;
+}
+.grid_3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+// ____________________
+// ____________________
+// ____________________
+
+// ___________Responsive Grid Classes__________
+
+// ____________992px_________
+@include MinMediaQuery(992px){
+  .grid_992_1{
+    grid-template-columns: 1fr;
+  }
+  .grid_992_2{
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid_992_3{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+// .grid_992_1{
+//     @include MinMediaQuery(992px){
+//       grid-template-columns: 1fr;
+//     }
+// }
+// .grid_992_2{
+//     @include MinMediaQuery(992px){
+//       grid-template-columns: 1fr 1fr;
+//     }
+// }
+// .grid_992_3{
+//     @include MinMediaQuery(992px){
+//       grid-template-columns: 1fr 1fr 1fr;
+//     }
+// }
+// _____________
+// _____________
+// _____________
+// _________768px_________
+.grid_768_1{
+    @include MinMediaQuery(768px){
+      grid-template-columns: 1fr;
+    }
+}
+.grid_768_2{
+    @include MinMediaQuery(768px){
+      grid-template-columns: 1fr 1fr;
+    }
+}
+.grid_768_3{
+    @include MinMediaQuery(768px){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+// _____________
+// _____________
+// _____________
+// _________576px_________
+.grid_576_1{
+    @include MinMediaQuery(576px){
+      grid-template-columns: 1fr;
+    }
+}
+.grid_576_2{
+    @include MinMediaQuery(576px){
+      grid-template-columns: 1fr 1fr;
+    }
+}
+.grid_576_3{
+    @include MinMediaQuery(576px){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+// _____________
+// _____________
+// _____________
+// _________376px_________
+.grid_376_1{
+    @include MinMediaQuery(376px){
+      grid-template-columns: 1fr;
+    }
+}
+.grid_376_2{
+    @include MinMediaQuery(376px){
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+// __________________
+// __________________
+// __________________
+// ________Text Align Classes_________
+.text_992_center{
+    @include MinMediaQuery(992px){
+        text-align: center;
+      }
+}
+.text_768_center{
+    @include MinMediaQuery(768px){
+        text-align: center;
+      }
+}
+.text_767_center{
+    @include MaxMediaQuery(767px){
+        text-align: center;
+      }
+}
+.text_576_center{
+    @include MinMediaQuery(576px){
+        text-align: center;
+      }
+}
+.text_376_center{
+    @include MinMediaQuery(376px){
+        text-align: center;
+      }
+}

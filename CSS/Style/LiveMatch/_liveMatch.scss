@@ -1,0 +1,58 @@
+.liveMatch{
+    // background-color: red;
+    padding-top: 0;
+}
+.liveMatch__img{
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+.liveMatch__img__play__btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $marigold;
+    font-size: 60px;
+}
+.liveMatch__players{
+    margin-top: 100px;
+    gap: 50px;
+}
+.liveMatch__detail{
+//    background-color: blue;
+   position: relative;
+   &::before{
+    content: "LIVE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: $cultured-2;
+    transform: translate(-50%,-50%);
+    font-size: 150px;
+    z-index: -1;
+    font-weight: 800;
+   }
+}
+.liveMatch__subtitle{
+    background-color: $marigold;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: max-content;
+    padding: 6px 16px;
+    margin: 0 auto;
+}
+.liveMatch__time{
+    color: $eerie-black-1;
+    font-size: $fs-1;
+    font-weight: 700;
+    max-width: max-content;
+    margin: 20px auto 0;
+    line-height: 1;
+    padding: 0;
+}
+.liveMatch__player__2{
+    display: flex;
+    justify-content: flex-end;
+}

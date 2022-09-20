@@ -1,0 +1,27 @@
+.hero{
+    background: url(/Images/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 180px;
+}
+.hero__container{
+    gap: 60px;
+}
+.hero__subtitle{
+    color: $marigold;
+    text-transform: uppercase;
+    font-size: $fs-6;
+    font-weight: 700;
+}
+.hero__title{
+    margin: 12px 0 15px;
+}
+.hero__para{
+    color: $white;
+    margin-bottom: 30px;
+}
+.hero__img{
+    @include flex-center-center;
+    img{
+        width: 70%;
+    }
+}

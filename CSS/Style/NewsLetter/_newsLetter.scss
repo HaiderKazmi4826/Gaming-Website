@@ -1,0 +1,63 @@
+.newsLetter{
+    padding-bottom: 80px;
+}
+.newsLetter__card{
+    background-color: $raisin-black-3;
+    padding: 40px 15px;
+    border-radius: 80px;
+    margin-top: -55px;
+    @include flex-center;
+    gap: 40px;
+    flex-direction: column;
+}
+.newsLetter__title{
+    text-align: center;
+}
+.newsLetter__form{
+    @include flex-center;
+    flex-direction: column;
+    gap: 15px;
+    // margin-top: 40px;
+}
+.newsLetter__form__input__wrapper{
+    @include flex-center;
+    padding: 20px;
+    gap: 10px;
+    input{
+        color: $white;
+    }
+    ion-icon{
+        color: $marigold;
+        font-size: 2rem;
+    }
+    &.skew_bg{
+        &::before{
+            background-color: $raisin-black-4;
+        }
+    }
+}
+.form__btn{
+    @include flex-center;
+    gap: 10px;
+    padding:15px 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $eerie-black-1;
+    font-size: $fs-8;
+    transition: $transition;
+    ion-icon{
+        transform: rotate(-45deg);
+        transition: $transition;
+    }
+    &:hover{
+        color: $marigold;
+        ion-icon{
+            color: $marigold
+        }
+        &.skew_bg{
+            &::before{
+                background-color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.header__top,.header__cart__btn{
+    display: none;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.header__bottom{
+    // position: relative;
+    width: 100%;
+    background-color: $raisin-black-2;
+    z-index: 999;
+    box-sizing: $shadow-1;
+    padding: 20px 0;
+    &.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+.header__bottom__container{
+    @include flex-center-between;
+}
+.header__logo{
+    color: $white;
+    font-family: $oxanium;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.header__btns{
+    @include flex-center;
+    gap: 10px;
+}
+.header__search__btn{
+    padding: 10px;
+    font-size: 30px;
+    ion-icon{
+        --ionicon-stroke-width:68px;
+        color: $marigold;
+    }
+}
+.header__navbar__toggler{
+    font-size: 30px;
+    color: $white;
+    padding: 4px;
+    border: 1px solid $white;
+    ion-icon[name="close-outline"]{
+       display: none;
+    }
+    ion-icon[name="menu-outline"]{
+       display: block;
+    }
+
+    &.active{
+        ion-icon[name="close-outline"]{
+            display: block;
+         }
+         ion-icon[name="menu-outline"]{
+            display: none;
+         }
+    }
+}
+
+.header__navbar{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    max-width: 350px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    box-shadow: $shadow-1;
+    background-color: $raisin-black-2;
+    &.active{
+        max-height: 600px;
+    }
+}
+.nav__item:not(:last-child){
+    border-bottom: 1px solid $white;
+}
+.nav__link{
+    padding: 15px;
+    text-transform: capitalize;
+    color: $white;
+    font-size: $fs-6;
+    display: block;
+    transition: $transition;
+    &:hover{
+        background-color: $white_10;
+    }
+}
+
+.search__box{
+    position: fixed;
+    inset: 0;
+    background-color: $rich-black-fogra-29_95;
+    z-index: 9999;
+    @include flex-center-center;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.search__box__close__btn{
+    display: none;
+}
+.search__box__inner{
+    position: relative;
+}
+.search__box__input__field{
+    padding: 20px;
+    border-bottom: 3px solid $white_10;
+    transition: $transition;
+    color: $white;
+    &:focus{
+        border-color: $white;
+    }
+}
+.search__box__input__field::placeholder{
+    font-size: $fs-6;
+    font-weight: 500;
+}
+.search__box__btn{
+    color: $marigold;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    ion-icon{
+        --ionicon-stroke-width: 70px;
+    }
+}

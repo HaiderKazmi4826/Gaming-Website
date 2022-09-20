@@ -1,0 +1,107 @@
+.footer{
+    padding-bottom: 80px;
+}
+.footer__top__container{
+    gap: 50px;
+    padding-bottom: 50px;
+}
+.footer__logo{
+    font-family: $oxanium;
+    color: $white;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.footer__brand__para{
+    color: $quick-silver;
+    margin: 20px 0 25px;
+    font-size: $fs-8;
+}
+.footer__address, .footer__phone__number, .footer__email{
+    display: flex;
+    gap: 10px;
+    color: $quick-silver;
+    font-weight: 500;
+    ion-icon{
+        font-size: 20px;
+    }
+}
+.footer__address, .footer__phone__number{
+    margin-bottom: 20px;
+}
+.footer__top__item__title{
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $fs-5;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    position: relative;
+    max-width: max-content;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 5rem;
+        height: 4px;
+        background-color: $marigold
+    }
+}
+.footer__top__item__common__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: capitalize;
+    li{
+        color: $quick-silver;
+        font-size: $fs-8;
+        font-weight: 500;
+        transition: $transition;
+        cursor: pointer;
+        &:hover{
+            transform: translateX(5px);
+            color: $marigold;
+        }
+    }
+}
+.footer__social__list{
+    @include flex-center;
+    gap: 10px;
+    margin-bottom: 35px;
+    li{
+        padding: 10px;
+        background-color: rgb(89, 123, 233);
+        border-radius: 3px;
+        ion-icon{
+            color: $white;
+        }
+        &:nth-child(2){
+            background-color: rgb(89, 163, 233);
+        }
+        &:nth-child(3){
+            background-color: rgb(194, 49, 49);
+        }
+        &:nth-child(4){
+            background-color: rgb(38, 55, 146);
+        }
+    }
+}
+.footer__form__input__field{
+    @include flex-center;
+    height: 50px;
+    padding-left: 20px;
+    background-color: $raisin-black-4;
+    max-width: max-content;
+    overflow: hidden;
+    input{
+        max-width: max-content;
+        color: $white
+    }
+    button{
+        background-color: $marigold;
+        height: 100%;
+        padding: 0 20px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+:root {
+
+    /**
+     * colors
+     */
+  
+    --rich-black-fogra-29_95: hsla(222, 18%, 11%, 0.95);
+    --raisin-black-1: hsl(0, 0%, 16%);
+    --raisin-black-2: hsl(236, 17%, 17%);
+    --raisin-black-3: hsl(280, 11%, 11%);
+    --raisin-black-4: hsl(280, 8%, 15%);
+    --english-violet: hsl(274, 21%, 23%);
+    --eerie-black-1: hsl(277, 25%, 10%);
+    --eerie-black-2: hsl(280, 7%, 8%);
+    --roman-silver: hsl(220, 6%, 59%);
+    --quick-silver: hsl(0, 1%, 65%);
+    --light-gray-1: hsl(0, 0%, 80%);
+    --light-gray-2: hsl(0, 2%, 82%);
+    --marigold_75: hsla(42, 99%, 46%, 0.75);
+    --xiketic_90: hsla(280, 37%, 8%, 0.9);
+    --cultured-2: hsl(0, 0%, 95%);
+    --marigold: hsl(42, 99%, 46%);
+    --platinum: hsl(0, 0%, 89%);
+    --dim-gray: hsl(0, 0%, 42%);
+    --white_15: hsla(0, 0%, 100%, 0.15);
+    --white_10: hsla(0, 0%, 100%, 0.1);
+    --xiketic: hsl(277, 25%, 10%);
+    --silver: hsl(0, 0%, 78%);
+    --white: hsl(0, 0%, 100%);
+    --jet: hsl(236, 13%, 23%);
+  
+    /**
+     * typography
+     */
+  
+    --ff-oxanium: 'Oxanium', cursive;
+    --ff-poppins: 'Poppins', sans-serif;
+  
+    --fs-1: 7rem;
+    --fs-2: 4.5rem;
+    --fs-3: 3.6rem;
+    --fs-4: 2.4rem;
+    --fs-5: 2.2rem;
+    --fs-6: 2rem;
+    --fs-7: 1.6rem;
+    --fs-8: 1.5rem;
+    --fs-9: 1.4rem;
+    --fs-10: 1.3rem;
+    --fs-11: 1.2rem;
+  
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+  
+    /**
+     * spacing
+     */
+  
+    --section-padding: 120px;
+  
+    /**
+     * gradient
+     */
+  
+    --gradient: radial-gradient(circle, hsl(250, 7%, 17%), hsl(250, 11%, 11%));
+  
+    /**
+     * box shadow
+     */
+  
+    --shadow-1: 0px 2px 8px 0px hsla(0, 0%, 0%, 0.2),
+                inset 0px 2px 8px 0px hsla(0, 0%, 0%, 0.4);
+    --shadow-2: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.4);
+    --shadow-3: 0px 5px 10px 1px hsla(219, 98%, 17%, 0.2);
+    --shadow-4: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.15);
+  
+    /**
+     * transition
+     */
+  
+    --transition: all 0.25s ease;
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+  
+  }
+
+
+//   _________________________
+//   _________________________
+//   _________________________
+//   _________________________
+//   _________________________
+//   _________________________
+//   _________________________
+
+    /**
+     * colors
+     */
+  
+     $rich-black-fogra-29_95: var(--rich-black-fogra-29_95);
+     $raisin-black-1: var(--raisin-black-1);
+     $raisin-black-2: var(--raisin-black-2);
+     $raisin-black-3: var(--raisin-black-3);
+     $raisin-black-4: var(--raisin-black-4);
+     $english-violet: var(--english-violet);
+     $eerie-black-1: var(--eerie-black-1);
+     $eerie-black-2: var(--eerie-black-2);
+     $roman-silver: var(--roman-silver);
+     $quick-silver: var(--quick-silver);
+     $light-gray-1: var(--light-gray-1);
+     $light-gray-2: var(--light-gray-2);
+     $marigold_75: var(--marigold_75);
+     $xiketic_90: var(--xiketic_90);
+     $cultured-2: var(--cultured-2);
+     $marigold: var(--marigold);
+     $platinum: var(--platinum);
+     $dim-gray: var(--dim-gray);
+     $white_15: var(--white_15);
+     $white_10: var(--white_10);
+     $xiketic: var(--xiketic);
+     $silver: var(--silver);
+     $white: var(--white);
+     $jet: var(--jet);
+   
+     /**
+      * typography
+      */
+   
+     $oxanium: var(--ff-oxanium);
+     $poppins: var(--ff-poppins);
+   
+     $fs-1: var(--fs-1);
+     $fs-2: var(--fs-2);
+     $fs-3: var(--fs-3);
+     $fs-4: var(--fs-4);
+     $fs-5: var(--fs-5);
+     $fs-6: var(--fs-6);
+     $fs-7: var(--fs-7);
+     $fs-8: var(--fs-8);
+     $fs-9: var(--fs-9);
+     $fs-10: var(--fs-10);
+     $fs-11: var(--fs-11);
+   
+     $fw-500: 500;
+     $fw-600: 600;
+     $fw-700: 700;
+     $fw-800: 800;
+   
+     /**
+      * spacing
+      */
+   
+     $section-padding: var(--section-padding);
+   
+     /**
+      * gradient
+      */
+   
+     $gradient: var(--gradient);
+   
+     /**
+      * box shadow
+      */
+   
+     $shadow-1: var(--shadow-1);
+     $shadow-2: var(--shadow-2);
+     $shadow-3: var(--shadow-3);
+     $shadow-4: var(--shadow-4);
+   
+     /**
+      * transition
+      */
+   
+     $transition: var(--transition);
+     $cubic-out: var(--cubic-out);
