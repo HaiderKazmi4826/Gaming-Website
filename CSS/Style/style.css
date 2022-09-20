@@ -436,7 +436,7 @@ p span {
   color: var(--white);
   font-family: var(--ff-oxanium);
   text-transform: capitalize;
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: 800;
 }
 
